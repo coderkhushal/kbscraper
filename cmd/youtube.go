@@ -98,8 +98,10 @@ var youtubeCmd = &cobra.Command{
 				err := scrapers.ExportVideosToCSV(videos, filename, filepath)
 				if err != nil {
 					fmt.Println(err)
+				} else {
+					fmt.Println("Exported Successfully")
 				}
-				fmt.Println("Exported Successfully")
+
 			} else if exportType == "JSON" {
 				var (
 					filename string
@@ -117,9 +119,12 @@ var youtubeCmd = &cobra.Command{
 
 				err := scrapers.ExportVideosToJSON(videos, filename, filepath)
 				if err != nil {
+
 					fmt.Println(err)
+				} else {
+					fmt.Println("Exported Successfully")
 				}
-				fmt.Println("Exported Successfully")
+
 			}
 
 		} else if variant == "Comments" {
@@ -183,8 +188,9 @@ var youtubeCmd = &cobra.Command{
 				err := scrapers.ExportCommentsToCSV(comments, filename, filepath)
 				if err != nil {
 					fmt.Println(err)
+				} else {
+					fmt.Println("Exported Successfully")
 				}
-				fmt.Println("Exported Successfully")
 			} else if exportType == "JSON" {
 				var (
 					filename string
@@ -203,8 +209,10 @@ var youtubeCmd = &cobra.Command{
 				err := scrapers.ExportCommentsToJSON(comments, filename, filepath)
 				if err != nil {
 					fmt.Println(err)
+				} else {
+					fmt.Println("Exported Successfully")
 				}
-				fmt.Println("Exported Successfully")
+
 			}
 
 		}

@@ -33,7 +33,7 @@ func ScrapeVideoComments(videoLink string, maxComments int) ([]outputs.YoutubeCo
 	page := browser.MustPage(videoLink)
 	page.MustWaitLoad()
 	fmt.Println("Scraping comments...")
-	time.Sleep(5 * time.Second)
+	time.Sleep(10 * time.Second)
 
 	if _, err := page.Eval(`window.scrollBy(0, 1000)`); err != nil {
 
