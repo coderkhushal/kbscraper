@@ -30,9 +30,19 @@ Run the project
 
 - youtube scraping
 
+
+CLI Command
 ```
     kbscraper youtube
 ```
+
+Code Running Command
+```
+    go run main.go youtube 
+```
+
+
+    
 
 
 
