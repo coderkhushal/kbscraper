@@ -4,7 +4,7 @@ Kbscrpaer is a cli tool written in go which allow users to scrape popular websit
 
 ## Demo
 
-https://github.com/user-attachments/assets/49a23d2d-8d46-46bd-8055-430233ff68d6
+https://github.com/user-attachments/assets/238bf3fb-9320-43a0-9146-5c2fc6a3c481
 
 
 
